@@ -15,7 +15,7 @@ function App() {
 
     try {
       // Ajuste o endereço se o seu backend estiver em outra porta
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/notifications}`, {
+      const response = await fetch(`https://microservico-de-notificacoes-1.onrender.com/notifications`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, message, level })
@@ -66,7 +66,7 @@ function App() {
           <div className="form-group">
             <label>Nível de Urgência</label>
             <select value={level} onChange={e => setLevel(e.target.value)}>
-              <option value="INFO">ℹ️ Info</option>
+              <option value="Info">ℹ️ Info</option>
               <option value="WARNING">⚠️ Warning</option>
               <option value="CRITICAL">🚨 Critical</option>
             </select>
