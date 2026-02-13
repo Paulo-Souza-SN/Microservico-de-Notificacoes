@@ -13,7 +13,7 @@ app.use(express.json());
 const notificationSchema = z.object({
   title: z.string().min(3, "O título deve ter pelo menos 3 caracteres"),
   message: z.string().min(5, "A mensagem deve ser mais detalhada"),
-  level: z.enum(['ℹ️ Info', '⚠️ WARNING', '🚨CRITICAL'])
+  level: z.enum([ 'Info',  'WARNING', 'CRITICAL'])
 });
 
 app.post('/notifications', async (req, res) => {
@@ -60,5 +60,5 @@ app.post('/notifications', async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("🔥 Backend rodando em http://localhost:3000");
+  console.log("🔥 Backend rodando em https://microservico-de-notificacoes-1.onrender.com");
 });

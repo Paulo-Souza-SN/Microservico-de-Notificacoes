@@ -15,7 +15,7 @@ function App() {
 
     try {
       // Ajuste o endereço se o seu backend estiver em outra porta
-      const response = await fetch('http://localhost:3000/notifications', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/notifications}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, message, level })
