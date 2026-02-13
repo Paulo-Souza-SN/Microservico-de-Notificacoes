@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Yeseva+One&display=swap');
+
+
+#root{
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #000000; /* Cinza bem escuro */
+  color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.card {
+  background-color: #080808;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #374151;
+  filter: drop-shadow(0px 0px 1px #4a13ff);
+}
+
+h1 {
+  font-family: "Orbitron";
+  font-weight: normal;
+  font-size: 3em;
+  color: #4a13ff;
+  text-shadow: 0 0 2px #5a13ff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #080808;
+  border: 1px solid #262626;
+  border-radius: 0.4rem;
+  color: white;
+  outline: none;
+  transition: 0.2s ease-in;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a13ff;
+  filter: drop-shadow(0px 0px 1px #4a13ff);
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2d0b9b;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #280a8d;
+}
+
+button:disabled {
+  background-color: #280a8d;
+  cursor: not-allowed;
+}
+
+.status-msg {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
