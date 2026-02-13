@@ -1,4 +1,4 @@
-# 🛰️ Viggy
+# 🛰️ Koda
 
 **Koda** é um ecossistema de microserviços focado em centralização e despacho de notificações críticas. Ele atua como uma ponte inteligente entre eventos do sistema e canais de comunicação (nesta versão, integrada ao Discord).
 
