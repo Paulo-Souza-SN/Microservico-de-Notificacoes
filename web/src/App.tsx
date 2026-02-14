@@ -73,7 +73,7 @@ function App() {
           </div>
 
           <button type="submit" disabled={loading}>
-            {loading ? 'Processando...' : 'Informar'}
+            {loading ? 'Processando...' : 'Notificar'}
           </button>
 
           {status && <div className="status-msg">{status}</div>}
