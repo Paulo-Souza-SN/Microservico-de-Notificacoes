@@ -48,7 +48,7 @@ function App() {
               type="text"
               placeholder="Ex: Servidor fora do ar"
               value={title} 
-              onChange={e => setTitle(e.target.value)} 
+              onChange={e => setTitle(e.target.value)}
               required
             />
           </div>
@@ -66,14 +66,14 @@ function App() {
           <div className="form-group">
             <label>Nível de Urgência</label>
             <select value={level} onChange={e => setLevel(e.target.value)}>
-              <option value="Info">ℹ️ Info</option>
-              <option value="WARNING">⚠️ Warning</option>
-              <option value="CRITICAL">🚨 Critical</option>
+              <option value="Info">ℹ️ Informação</option>
+              <option value="WARNING">⚠️ Perigo</option>
+              <option value="CRITICAL">🚨 Crítico</option>
             </select>
           </div>
 
           <button type="submit" disabled={loading}>
-            {loading ? 'Processando...' : 'Disparar Notificação'}
+            {loading ? 'Processando...' : 'Informar'}
           </button>
 
           {status && <div className="status-msg">{status}</div>}
